@@ -19,7 +19,7 @@ A beautifully crafted Netflix clone built with **Next.js App Router**, **Tailwin
 ## 📂 Project Structure
 
 ```
-my-netflix-clone/
+netflix-clone/
 ├── public/                     # Static files (images, icons, etc.)
 │   └── assets/
 │
