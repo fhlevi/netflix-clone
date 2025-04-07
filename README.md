@@ -1,36 +1,160 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🎬 Netflix Clone - Next.js 13+ | TypeScript | Tailwind CSS
 
-## Getting Started
+A beautifully crafted Netflix clone built with **Next.js App Router**, **Tailwind CSS**, and **TypeScript**. The app replicates the visual and functional design of Netflix's login and browsing experience, using modular components and SOLID principles for scalability and maintainability.
 
-First, run the development server:
+---
+
+## 🚀 Features
+
+- 🔐 Authentication-ready (mock or Firebase/NextAuth)
+- 🎥 Movie data powered by [TMDB API](https://www.themoviedb.org/)
+- 💅 Netflix-style UI with responsive design
+- ⚙️ Clean folder structure with SOLID principle
+- 💻 Built with TypeScript and Tailwind CSS
+- 🧱 Scalable and maintainable architecture
+- 🔄 App Router support (Next.js 13+)
+
+---
+
+## 📂 Project Structure
+
+```
+my-netflix-clone/
+├── public/                     # Static files (images, icons, etc.)
+│   └── assets/
+│
+├── src/
+│   ├── app/                    # Next.js App Router directory
+│   │   ├── (home)/             # Landing page
+│   │   ├── login/              # Login page
+│   │   ├── browse/             # Post-login dashboard
+│   │   └── layout.tsx          # Root layout wrapper
+│
+│   ├── components/             # Reusable UI components
+│   │   ├── login/              # Login-related components (form, layout, footer)
+│   │   └── common/             # Navbar, Banner, MovieRow, etc.
+│
+│   ├── constants/              # App-wide static constants
+│
+│   ├── config/                 # App config (e.g., API keys, URLs)
+│
+│   ├── lib/                    # Logic layer: API clients, auth utils
+│
+│   ├── styles/                 # Global and scoped CSS
+│
+│   └── types/                  # TypeScript types and interfaces
+│
+├── .env.local                  # Environment variables
+├── next.config.js              # Next.js config
+├── tailwind.config.js          # Tailwind CSS config
+├── postcss.config.js           # PostCSS config
+├── tsconfig.json               # TypeScript config
+└── package.json                # NPM scripts and dependencies
+```
+
+---
+
+## 🛠️ Getting Started
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/your-username/netflix-clone-nextjs.git
+cd netflix-clone-nextjs
+```
+
+### 2. Install dependencies
+
+```bash
+npm install
+# or
+yarn install
+```
+
+### 3. Set up environment variables
+
+Create a `.env.local` file:
+
+```env
+NEXT_PUBLIC_TMDB_API_KEY=your_tmdb_api_key_here
+```
+
+> 🔑 You can get a free TMDB API key at [https://www.themoviedb.org/settings/api](https://www.themoviedb.org/settings/api)
+
+### 4. Run the development server
 
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Visit [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📦 Scripts
 
-## Learn More
+| Script         | Description                       |
+|----------------|-----------------------------------|
+| `dev`          | Run the app in development mode   |
+| `build`        | Compile the app for production    |
+| `start`        | Start the production server       |
+| `lint`         | Run lint checks                   |
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📌 Technologies Used
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- [Next.js 13+](https://nextjs.org/)
+- [React 18](https://reactjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [The Movie Database API](https://www.themoviedb.org/)
+- (Optional) [Firebase](https://firebase.google.com/) / [NextAuth.js](https://next-auth.js.org/)
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## ⚙️ Future Enhancements
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- ✅ Add real authentication (Firebase or NextAuth.js)
+- 🎬 Add trailers and video modals
+- 💾 User profiles & favorites
+- 🌐 i18n and accessibility improvements
+- 🧪 Add unit and integration tests with Testing Library and Jest
+
+---
+
+## 📸 Screenshots
+
+> Coming soon...
+
+---
+
+## 🧠 SOLID Principles Applied
+
+| Principle | Description |
+|----------|-------------|
+| **S - Single Responsibility** | Each component does one thing: form, layout, footer, etc. |
+| **O - Open/Closed** | Components are extendable without modifying core logic |
+| **L - Liskov Substitution** | Auth logic and services can be swapped (e.g., Firebase ↔️ NextAuth) |
+| **I - Interface Segregation** | Components only receive props they actually use |
+| **D - Dependency Inversion** | UI depends on abstractions like auth utility functions |
+
+---
+
+## 🙋‍♂️ Acknowledgements
+
+- UI inspired by [Netflix](https://www.netflix.com/)
+- Movie data from [TMDB](https://www.themoviedb.org/)
+
+---
+
+## 📬 Contact
+
+Have questions or feedback?  
+Open an issue or reach out via [GitHub](https://github.com/fhlevi).
+
+---
+
+> ⚠️ This project is for educational/demo purposes only. It is not affiliated with Netflix.
