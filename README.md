@@ -23,26 +23,25 @@ my-netflix-clone/
 ├── public/                     # Static files (images, icons, etc.)
 │   └── assets/
 │
-├── src/
-│   ├── app/                    # Next.js App Router directory
-│   │   ├── (home)/             # Landing page
-│   │   ├── login/              # Login page
-│   │   ├── browse/             # Post-login dashboard
-│   │   └── layout.tsx          # Root layout wrapper
+├── app/                    # Next.js App Router directory
+│   ├── (home)/             # Landing page
+│   ├── login/              # Login page
+│   ├── browse/             # Post-login dashboard
+│   └── layout.tsx          # Root layout wrapper
 │
-│   ├── components/             # Reusable UI components
-│   │   ├── login/              # Login-related components (form, layout, footer)
-│   │   └── common/             # Navbar, Banner, MovieRow, etc.
+├── components/             # Reusable UI components
+│   ├── login/              # Login-related components (form, layout, footer)
+│   └── common/             # Navbar, Banner, MovieRow, etc.
 │
-│   ├── constants/              # App-wide static constants
+├── constants/              # App-wide static constants
 │
-│   ├── config/                 # App config (e.g., API keys, URLs)
+├── config/                 # App config (e.g., API keys, URLs)
 │
-│   ├── lib/                    # Logic layer: API clients, auth utils
+├── lib/                    # Logic layer: API clients, auth utils
 │
-│   ├── styles/                 # Global and scoped CSS
+├── styles/                 # Global and scoped CSS
 │
-│   └── types/                  # TypeScript types and interfaces
+├──types/                  # TypeScript types and interfaces
 │
 ├── .env.local                  # Environment variables
 ├── next.config.js              # Next.js config
