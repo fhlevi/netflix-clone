@@ -5,4 +5,5 @@ export interface MenuFooterLink {
 
 export interface MenuFooter {
     login_links: MenuFooterLink[];
+    home_links: MenuFooterLink[];
 }

@@ -1,103 +1,49 @@
-import Image from "next/image";
+'use client'
 
-export default function Home() {
+import { ContentSection } from "@/components/common/content-section";
+import FAQ from "@/components/common/faq";
+import { Footer } from "@/components/common/footer";
+import { FormMembership } from "@/components/common/form-membership";
+import Header from "@/components/common/header";
+import HeroBanner from "@/components/common/hero-banner";
+import { HomeLayout } from "@/components/layouts/home-layout";
+
+export default function HomePage() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <HomeLayout>
+      <Header />
+      <HeroBanner />
+      <ContentSection backgroundImage="/assets/home/content-1.jpg" backgroundPosition="right">
+        <div className="flex flex-col text-left space-y-5">
+          <h2 className="text-4xl md:text-[50px] font-bold">Enjoy on your TV.</h2>
+          <p className="text-lg md:text-[26px] font-medium">Watch on Smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</p>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+      </ContentSection>
+      <ContentSection backgroundImage="/assets/home/content-2.png" backgroundPosition="left">
+        <div className="flex flex-col text-left space-y-5">
+          <h2 className="text-4xl md:text-[50px] font-bold">Download your shows to watch offline.</h2>
+          <p className="text-lg md:text-[26px] font-medium">Save your favorites easily and always have something to watch.</p>
+        </div>
+      </ContentSection>
+      <ContentSection backgroundImage="/assets/home/content-3.png" backgroundPosition="right">
+        <div className="flex flex-col text-left space-y-5">
+          <h2 className="text-4xl md:text-[50px] font-bold">Watch everywhere.</h2>
+          <p className="text-lg md:text-[26px] font-medium">Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
+        </div>
+      </ContentSection>
+      <ContentSection backgroundImage="/assets/home/content-4.png" backgroundPosition="left">
+        <div className="flex flex-col text-left space-y-5">
+          <h2 className="text-4xl md:text-[50px] font-bold">Create profiles for kids.</h2>
+          <p className="text-lg md:text-[26px] font-medium">Send kids on adventures with their favorite characters in a space made just for them—free with your membership.</p>
+        </div>
+      </ContentSection>
+      <ContentSection>
+        <div className="flex flex-col items-center justify-center w-full space-y-5">
+          <FAQ />
+          <FormMembership />
+        </div>
+      </ContentSection>
+      <Footer />
+    </HomeLayout>
   );
 }
