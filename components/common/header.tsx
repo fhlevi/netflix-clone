@@ -22,7 +22,7 @@ const Header = () => {
                         <form className="d-flex" role="search">
                             <select>
                                 <option>English</option>
-                                <option>Hindi</option>
+                                <option>Indonesia</option>
                             </select>
                             <button className="bg-[#E50914] h-9 w-20 rounded-sm" onClick={clickHandler}>
                                 <span>Sign In</span>

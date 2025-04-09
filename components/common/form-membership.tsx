@@ -1,7 +1,14 @@
+import { useRouter } from 'next/navigation';
 import { useState } from 'react'
 
 export const FormMembership = () => {
-    const [email, setEmail] = useState('')
+    const [email, setEmail] = useState('');
+    
+    const router = useRouter();
+
+    const handleRegister = () => {
+        router.push('/signup/regform');
+    }
 
     return (
         <div className="space-y-6">
@@ -14,7 +21,10 @@ export const FormMembership = () => {
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                 />
-                <button className="flex flex-row items-center justify-center space-x-4 min-w-60 md:w-auto min-h-[70px] bg-[#E50914] text-white font-normal rounded-xs text-3xl hover:bg-red-700">
+                <button 
+                    className="flex flex-row items-center justify-center space-x-4 min-w-60 md:w-auto min-h-[70px] bg-[#E50914] text-white font-normal rounded-xs text-3xl hover:bg-red-700"
+                    onClick={handleRegister}
+                >
                     <span>Get Started</span>
                     <img src="/assets/arrow-right.png" className="w-" alt="arrow-right" />
                 </button>

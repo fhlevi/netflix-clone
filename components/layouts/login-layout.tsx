@@ -1,5 +1,5 @@
-import { LoginLayoutFooter } from "../login/_footer";
-import { LoginLayoutHeader } from "../login/_header";
+import { LoginLayoutFooter } from "../login/footer";
+import { LoginLayoutHeader } from "../login/header";
 
 interface Props {
     children: React.ReactNode;
