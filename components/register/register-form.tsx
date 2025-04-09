@@ -2,8 +2,6 @@
 
 import { useState } from 'react';
 
-
-
 interface RegisterFormProps {
     onSubmit: (props: {
         email: string, 

@@ -1,4 +1,4 @@
-export const LoginHelperLinks = () => {
+export const HelperLinks = () => {
     return (
         <div className="flex justify-between items-center text-sm text-gray-400 mt-2">
             <label className="flex items-center space-x-2">

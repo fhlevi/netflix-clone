@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { LoginHelperLinks } from './helper-links';
+import { HelperLinks } from './helper-links';
 import Link from 'next/link';
 
 interface Props {
@@ -48,7 +48,7 @@ export const LoginForm = ({ onLogin, error }: Props) => {
                 Use a Sign-In Code
             </button>
             <Link href="#" className="underline text-white text-center">Forgot password?</Link>
-            <LoginHelperLinks />
+            <HelperLinks />
         </form>
     );
 };

@@ -1,7 +1,7 @@
 'use client';
 
 import { LoginForm } from '@/components/login/login-form';
-import { LoginFooter } from '@/components/login/form-footer';
+import { FormInformation } from '@/components/login/form-information';
 import { LoginLayout } from '@/components/layouts/login-layout';
 import { loginWithEmail } from '@/lib/auth';
 import { useState } from 'react';
@@ -21,7 +21,7 @@ export default function LoginPage() {
     return (
         <LoginLayout>
             <LoginForm onLogin={handleLogin} error={error} />
-            <LoginFooter />
+            <FormInformation />
         </LoginLayout>
     );
 }

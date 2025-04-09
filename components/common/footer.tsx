@@ -1,5 +1,5 @@
-import { MENU_FOOTER } from "@/constants/menu-footer";
-import { MenuFooterLink } from "@/types/menu-footer";
+import { MENU_FOOTER } from "@/constants/menus";
+import { MenuFooterLink } from "@/types/menus";
 import Link from "next/link";
 import { useState } from "react";
 

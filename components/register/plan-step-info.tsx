@@ -30,7 +30,7 @@ export function PlanStepInfo({ onNext }: PlanStepInfoProps) {
 
             <button
                 onClick={onNext}
-                className="bg-red-600 hover:bg-red-700 text-white text-lg font-medium px-6 py-3 rounded w-full max-w-xs"
+                className="bg-red-600 hover:bg-red-700 text-white text-lg font-medium px-6 py-3 rounded w-full max-w-xs cursor-pointer"
             >
                 Next
             </button>

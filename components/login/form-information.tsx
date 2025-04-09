@@ -1,9 +1,11 @@
-export const LoginFooter = () => {
+import Link from "next/link";
+
+export const FormInformation = () => {
     return (
         <div className="mt-4 text-base text-gray-400">
             <p>
                 New to Netflix?{' '}
-                <a href="/signup" className="text-white hover:underline">Sign up now</a>.
+                <Link href="/" className="text-white hover:underline">Sign up now</Link>.
             </p>
             <p className="mt-4 text-[13px]">
                 This page is protected by Google reCAPTCHA to ensure you're not a bot.

@@ -1,4 +1,4 @@
-import { MenuFooter } from "@/types/menu-footer";
+import { MenuFooter } from "@/types/menus";
 
 export const MENU_FOOTER: MenuFooter = {
     login_links: [
