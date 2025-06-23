@@ -4,7 +4,7 @@ A beautifully crafted Netflix clone built with **Next.js App Router**, **Tailwin
 
 ---
 
-## Demo
+## 🔗 Demo
 
 Lihat aplikasi yang berjalan di: [netflix-app-alpha-one.vercel.app](https://netflix-app-alpha-one.vercel.app/)
 
